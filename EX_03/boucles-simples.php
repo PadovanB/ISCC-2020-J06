@@ -1,23 +1,23 @@
 <?php
-function compter($maximum)
-{
-    $compter=0;
-    while ($compteur<10){
-        $compteur = $compteur +1;
-        echo "<p>compteur : $compteur </p>";
-    }
-}
-compter (10);
-?>
+    $maximum=10;
+    $i=1;
 
-<?php
-function compter_for($maximum)
-{
-  for ($compteur=0; $compteur<=10; $compteur = $compteur +1) {
-      echo "+ 1 tour";
-      echo "<p>compteur : $compteur</p>" ;
-  }
-  
-}
-compter_for(10);
+    function compter($maximum, $i){
+        while($i<=$maximum)
+        {
+            echo "<br>$i</br>";
+            $i=$i+1;
+        }
+        return;
+    }
+    function compter_for($maximum, $i){
+        for($i; $i<=10;)
+        {
+            echo "<br>$i</br>";
+            $i=$i+1;
+        }
+    }
+    
+    compter($maximum, $i);
+    compter_for($maximum, $i);
 ?>
